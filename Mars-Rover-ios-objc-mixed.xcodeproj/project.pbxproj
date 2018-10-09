@@ -14,6 +14,7 @@
 		13A4C4E2216D460100D0C6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4E1216D460100D0C6EF /* Main.storyboard */; };
 		13A4C4ED216D4F2B00D0C6EF /* RoverPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4EC216D4F2B00D0C6EF /* RoverPhotosViewController.swift */; };
 		13A4C4F4216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4F3216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m */; };
+		13A4C4F8216D586900D0C6EF /* MarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		13A4C4F1216D4FB500D0C6EF /* Mars-Rover-ios-objc-mixed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mars-Rover-ios-objc-mixed-Bridging-Header.h"; sourceTree = "<group>"; };
 		13A4C4F2216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGARoverPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		13A4C4F3216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGARoverPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		13A4C4F6216D586900D0C6EF /* MarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsRoverClient.h; sourceTree = "<group>"; };
+		13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsRoverClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */,
 				13A4C4E4216D46E100D0C6EF /* View Controllers */,
 				13A4C4F5216D512700D0C6EF /* Views */,
+				13A4C4F9216D586D00D0C6EF /* Networking */,
 				13A4C4E3216D46C100D0C6EF /* Resources */,
 			);
 			path = "Mars-Rover-ios-objc-mixed";
@@ -98,6 +102,15 @@
 				13A4C4F3216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		13A4C4F9216D586D00D0C6EF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				13A4C4F6216D586900D0C6EF /* MarsRoverClient.h */,
+				13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +187,7 @@
 				13A4C4D5216D3F0600D0C6EF /* main.m in Sources */,
 				13A4C4C7216D3F0500D0C6EF /* AppDelegate.m in Sources */,
 				13A4C4F4216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m in Sources */,
+				13A4C4F8216D586900D0C6EF /* MarsRoverClient.m in Sources */,
 				13A4C4ED216D4F2B00D0C6EF /* RoverPhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
