@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Mars-Rover-ios-objc-mixed.xcodeproj">
+      location = "self:/Users/conner/Desktop/Projects/Mars-Rover-ios-objc-mixed/Mars-Rover-ios-objc-mixed.xcodeproj">
    </FileRef>
 </Workspace>
