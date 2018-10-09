@@ -30,7 +30,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="Ljo-u8-cbz">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="Ljo-u8-cbz" customClass="CGARoverPhotoCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -48,6 +48,9 @@
                                             <constraint firstItem="xlN-QE-XWB" firstAttribute="leading" secondItem="Ljo-u8-cbz" secondAttribute="leading" id="ndA-Z0-1y1"/>
                                             <constraint firstAttribute="bottom" secondItem="xlN-QE-XWB" secondAttribute="bottom" id="x4l-Q0-qQ8"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="roverPhotoImageView" destination="xlN-QE-XWB" id="DL3-OM-VrR"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
