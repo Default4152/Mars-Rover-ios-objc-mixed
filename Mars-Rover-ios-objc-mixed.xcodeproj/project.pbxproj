@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		13A4C4C7216D3F0500D0C6EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */; };
 		13A4C4CA216D3F0500D0C6EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4C9216D3F0500D0C6EF /* ViewController.m */; };
-		13A4C4CD216D3F0500D0C6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4CB216D3F0500D0C6EF /* Main.storyboard */; };
 		13A4C4CF216D3F0600D0C6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4CE216D3F0600D0C6EF /* Assets.xcassets */; };
 		13A4C4D2216D3F0600D0C6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4D0216D3F0600D0C6EF /* LaunchScreen.storyboard */; };
 		13A4C4D5216D3F0600D0C6EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4D4216D3F0600D0C6EF /* main.m */; };
+		13A4C4E2216D460100D0C6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4E1216D460100D0C6EF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13A4C4C8216D3F0500D0C6EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		13A4C4C9216D3F0500D0C6EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		13A4C4CC216D3F0500D0C6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13A4C4CE216D3F0600D0C6EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A4C4D1216D3F0600D0C6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13A4C4D3216D3F0600D0C6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A4C4D4216D3F0600D0C6EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13A4C4E1216D460100D0C6EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,11 @@
 				13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */,
 				13A4C4C8216D3F0500D0C6EF /* ViewController.h */,
 				13A4C4C9216D3F0500D0C6EF /* ViewController.m */,
-				13A4C4CB216D3F0500D0C6EF /* Main.storyboard */,
 				13A4C4CE216D3F0600D0C6EF /* Assets.xcassets */,
 				13A4C4D0216D3F0600D0C6EF /* LaunchScreen.storyboard */,
 				13A4C4D3216D3F0600D0C6EF /* Info.plist */,
 				13A4C4D4216D3F0600D0C6EF /* main.m */,
+				13A4C4E1216D460100D0C6EF /* Main.storyboard */,
 			);
 			path = "Mars-Rover-ios-objc-mixed";
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A4C4E2216D460100D0C6EF /* Main.storyboard in Resources */,
 				13A4C4D2216D3F0600D0C6EF /* LaunchScreen.storyboard in Resources */,
 				13A4C4CF216D3F0600D0C6EF /* Assets.xcassets in Resources */,
-				13A4C4CD216D3F0500D0C6EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13A4C4CB216D3F0500D0C6EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13A4C4CC216D3F0500D0C6EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		13A4C4D0216D3F0600D0C6EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
