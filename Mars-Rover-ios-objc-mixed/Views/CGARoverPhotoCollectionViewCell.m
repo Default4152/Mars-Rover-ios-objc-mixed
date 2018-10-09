@@ -14,4 +14,9 @@
 
 @implementation CGARoverPhotoCollectionViewCell
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [[self roverPhotoImageView] setImage:[UIImage imageNamed:@"MarsPhoto-Placeholder"]];
+}
+
 @end

@@ -8,14 +8,21 @@
 
 import UIKit
 
-class RoverPhotosViewController: UIViewController {
+class RoverPhotosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as?
+            CGARoverPhotoCollectionViewCell ?? CGARoverPhotoCollectionViewCell()
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
