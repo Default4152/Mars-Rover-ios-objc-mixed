@@ -6,3 +6,5 @@
 //  Copyright © 2018 Conner. All rights reserved.
 //
 #import "CGARoverPhotoCollectionViewCell.h"
+#import "MarsPhoto.h"
+#import "MarsRoverClient.h"

@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MarsPhoto.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MarsRoverClient : NSObject
 - (NSURL *)urlForPhotosFromRover:(NSString *)roverName sol:(int)sol;
-- (void)fetchRoverPhotosWithRover:(NSString *)marsRover sol:(int)sol completion:(void (^)(NSArray *photos, NSError *))completion;
+- (void)fetchRoverPhotosWithRover:(NSString *)marsRover sol:(int)sol completion:(void (^)(NSArray <MarsPhoto *>*photos, NSError *))completion;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -49,7 +49,7 @@
                                             <constraint firstAttribute="bottom" secondItem="xlN-QE-XWB" secondAttribute="bottom" id="x4l-Q0-qQ8"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="roverPhotoImageView" destination="xlN-QE-XWB" id="DL3-OM-VrR"/>
+                                            <outlet property="marsRoverPhotoImageView" destination="xlN-QE-XWB" id="nfH-tY-iaC"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -67,6 +67,9 @@
                             <constraint firstAttribute="trailing" secondItem="x4T-SY-qY3" secondAttribute="trailing" id="zbI-ym-VfE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="x4T-SY-qY3" id="3YU-07-Kuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

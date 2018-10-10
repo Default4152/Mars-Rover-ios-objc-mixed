@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)fetchRoverPhotosWithRover:(NSString *)marsRover sol:(int)sol completion:(void (^)(NSArray *, NSError *))completion {
+- (void)fetchRoverPhotosWithRover:(NSString *)marsRover sol:(int)sol completion:(void (^)(NSArray <MarsPhoto *>*, NSError *))completion {
     NSURL *url = [self urlForPhotosFromRover:marsRover sol:sol];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     

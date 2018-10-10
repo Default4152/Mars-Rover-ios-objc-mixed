@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
                                sol:(int)sol
                             camera:(Camera *)camera
                          earthDate:(NSDate *)earthDate
-                          imageURL:(NSURL *)imageURL;
+                          imageURL:(NSString *)imageURL;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int sol;
 @property Camera *camera;
 @property NSDate *earthDate;
-@property NSURL *imageURL;
+@property NSString *imageURL;
 @end
 
 NS_ASSUME_NONNULL_END

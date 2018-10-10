@@ -11,14 +11,14 @@
 
 @implementation MarsPhoto
 
-- (instancetype)initWithIdentifier:(int)identifier sol:(int)sol camera:(Camera *)camera earthDate:(NSDate *)earthDate imageURL:(NSURL *)imageURL {
+- (instancetype)initWithIdentifier:(int)identifier sol:(int)sol camera:(Camera *)camera earthDate:(NSDate *)earthDate imageURL:(NSString *)imageURL {
     self = [super init];
     if (self) {
         _identifier = identifier;
         _sol = sol;
         _camera = camera;
-        _earthDate = [earthDate copy];
-        _imageURL = [imageURL copy];
+        _earthDate = earthDate;
+        _imageURL = imageURL;
     }
     return self;
 }
@@ -37,7 +37,7 @@
     int identifier = [[dictionary objectForKey:@"id"] intValue];
     int sol = [[dictionary objectForKey:@"sol"] intValue];
     NSDate *earthDate = dictionary[@"earth_date"];
-    NSURL *imageURL = dictionary[@"img_src"];
+    NSString *imageURL = dictionary[@"img_src"];
     
     // 4. init MarsPhoto with values and camera
     return [self initWithIdentifier:identifier sol:sol camera:camera earthDate:earthDate imageURL:imageURL];

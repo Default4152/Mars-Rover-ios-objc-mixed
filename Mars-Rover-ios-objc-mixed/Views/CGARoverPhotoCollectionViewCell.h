@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CGARoverPhotoCollectionViewCell : UICollectionViewCell
-
+@property (strong, nonatomic) IBOutlet UIImageView *marsRoverPhotoImageView;
 @end
 
 NS_ASSUME_NONNULL_END
