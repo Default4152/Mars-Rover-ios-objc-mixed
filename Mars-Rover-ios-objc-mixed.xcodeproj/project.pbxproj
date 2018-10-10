@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13828433216E998B007D810B /* FetchPhotoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13828432216E998B007D810B /* FetchPhotoOperation.m */; };
 		13A4C4C7216D3F0500D0C6EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */; };
 		13A4C4CF216D3F0600D0C6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4CE216D3F0600D0C6EF /* Assets.xcassets */; };
 		13A4C4D2216D3F0600D0C6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A4C4D0216D3F0600D0C6EF /* LaunchScreen.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13828431216E998B007D810B /* FetchPhotoOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchPhotoOperation.h; sourceTree = "<group>"; };
+		13828432216E998B007D810B /* FetchPhotoOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchPhotoOperation.m; sourceTree = "<group>"; };
 		13A4C4C2216D3F0500D0C6EF /* Mars-Rover-ios-objc-mixed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mars-Rover-ios-objc-mixed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A4C4C5216D3F0500D0C6EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13828430216E9902007D810B /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				13828431216E998B007D810B /* FetchPhotoOperation.h */,
+				13828432216E998B007D810B /* FetchPhotoOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		13A4C4B9216D3F0500D0C6EF = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +86,7 @@
 				13A4C4C6216D3F0500D0C6EF /* AppDelegate.m */,
 				13A4C4E4216D46E100D0C6EF /* View Controllers */,
 				13A4C4F5216D512700D0C6EF /* Views */,
+				13828430216E9902007D810B /* Operations */,
 				13A4C4F9216D586D00D0C6EF /* Networking */,
 				13A4C4FD216D92C200D0C6EF /* Model */,
 				13A4C4E3216D46C100D0C6EF /* Resources */,
@@ -202,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13828433216E998B007D810B /* FetchPhotoOperation.m in Sources */,
 				13A4C500216D93F700D0C6EF /* Camera.m in Sources */,
 				13A4C4D5216D3F0600D0C6EF /* main.m in Sources */,
 				13A4C4FC216D92BB00D0C6EF /* MarsPhoto.m in Sources */,

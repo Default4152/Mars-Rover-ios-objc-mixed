@@ -11,7 +11,7 @@ import UIKit
 class RoverPhotosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         super.viewDidLoad()
-        client.fetchRoverPhotos(withRover: "curiosity", sol: 1) { (roverPhotos, error) in
+        client.fetchRoverPhotos(withRover: "curiosity", sol: 14) { (roverPhotos, error) in
             self.roverPhotos = roverPhotos
         }
     }
@@ -19,7 +19,7 @@ class RoverPhotosViewController: UIViewController, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.roverPhotos.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as?
             CGARoverPhotoCollectionViewCell ?? CGARoverPhotoCollectionViewCell()
@@ -46,22 +46,32 @@ class RoverPhotosViewController: UIViewController, UICollectionViewDataSource, U
         return UIEdgeInsets(top: 0, left: 10.0, bottom: 0, right: 10.0)
     }
     
-    private func loadImage(forCell cell:CGARoverPhotoCollectionViewCell, forItemAt indexPath: IndexPath) {
+    private func loadImage(forCell cell: CGARoverPhotoCollectionViewCell, forItemAt indexPath: IndexPath) {
         let imageURL = self.roverPhotos[indexPath.row].imageURL
-        let url = URL(string: imageURL)!
+        let marsPhoto = self.roverPhotos[indexPath.row]
         
-        // using the imageURL, add https
+        let url = URL(string: imageURL)!
         guard var components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return }
         components.scheme = "https"
         
-        do {
-            let  data = try Data(contentsOf: components.url!)
-            let image = UIImage(data: data)
-            cell.marsRoverPhotoImageView.image = image
-        } catch {
-            NSLog("Error getting photo for item: \(indexPath)")
+        let fetchOp = FetchPhotoOperation(imageFrom: marsPhoto)
+        let completionOp = BlockOperation {
+            defer { self.operations.removeValue(forKey: Int(marsPhoto.identifier)) }
+            if let currentIndexPath = self.collectionView?.indexPath(for: cell),
+                currentIndexPath != indexPath {
+                return
+            }
+            
+            cell.marsRoverPhotoImageView.image = fetchOp.image
         }
+        
+        completionOp.addDependency(fetchOp)
+        photoFetchQueue.addOperation(fetchOp)
+        OperationQueue.main.addOperation(completionOp)
+        operations[Int(marsPhoto.identifier)] = fetchOp
     }
+    
+    @IBOutlet var collectionView: UICollectionView!
     
     private var roverPhotos: [MarsPhoto] = [] {
         didSet {
@@ -70,6 +80,8 @@ class RoverPhotosViewController: UIViewController, UICollectionViewDataSource, U
             }
         }
     }
+    
+    private var operations = [Int: Operation]()
+    private let photoFetchQueue = OperationQueue()
     private let client = MarsRoverClient()
-    @IBOutlet var collectionView: UICollectionView!
 }

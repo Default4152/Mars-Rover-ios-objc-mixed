@@ -8,3 +8,4 @@
 #import "CGARoverPhotoCollectionViewCell.h"
 #import "MarsPhoto.h"
 #import "MarsRoverClient.h"
+#import "FetchPhotoOperation.h"
