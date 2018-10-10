@@ -15,6 +15,8 @@
 		13A4C4ED216D4F2B00D0C6EF /* RoverPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4EC216D4F2B00D0C6EF /* RoverPhotosViewController.swift */; };
 		13A4C4F4216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4F3216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m */; };
 		13A4C4F8216D586900D0C6EF /* MarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */; };
+		13A4C4FC216D92BB00D0C6EF /* MarsPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4FB216D92BB00D0C6EF /* MarsPhoto.m */; };
+		13A4C500216D93F700D0C6EF /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4C4FF216D93F700D0C6EF /* Camera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		13A4C4F3216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGARoverPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		13A4C4F6216D586900D0C6EF /* MarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsRoverClient.h; sourceTree = "<group>"; };
 		13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsRoverClient.m; sourceTree = "<group>"; };
+		13A4C4FA216D92BB00D0C6EF /* MarsPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarsPhoto.h; sourceTree = "<group>"; };
+		13A4C4FB216D92BB00D0C6EF /* MarsPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsPhoto.m; sourceTree = "<group>"; };
+		13A4C4FE216D93F700D0C6EF /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		13A4C4FF216D93F700D0C6EF /* Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				13A4C4E4216D46E100D0C6EF /* View Controllers */,
 				13A4C4F5216D512700D0C6EF /* Views */,
 				13A4C4F9216D586D00D0C6EF /* Networking */,
+				13A4C4FD216D92C200D0C6EF /* Model */,
 				13A4C4E3216D46C100D0C6EF /* Resources */,
 			);
 			path = "Mars-Rover-ios-objc-mixed";
@@ -111,6 +118,17 @@
 				13A4C4F7216D586900D0C6EF /* MarsRoverClient.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		13A4C4FD216D92C200D0C6EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13A4C4FA216D92BB00D0C6EF /* MarsPhoto.h */,
+				13A4C4FB216D92BB00D0C6EF /* MarsPhoto.m */,
+				13A4C4FE216D93F700D0C6EF /* Camera.h */,
+				13A4C4FF216D93F700D0C6EF /* Camera.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A4C500216D93F700D0C6EF /* Camera.m in Sources */,
 				13A4C4D5216D3F0600D0C6EF /* main.m in Sources */,
+				13A4C4FC216D92BB00D0C6EF /* MarsPhoto.m in Sources */,
 				13A4C4C7216D3F0500D0C6EF /* AppDelegate.m in Sources */,
 				13A4C4F4216D512300D0C6EF /* CGARoverPhotoCollectionViewCell.m in Sources */,
 				13A4C4F8216D586900D0C6EF /* MarsRoverClient.m in Sources */,
